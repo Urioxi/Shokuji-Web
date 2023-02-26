@@ -1,4 +1,6 @@
+/* Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 *{
     margin: 0;
@@ -97,6 +99,22 @@ nav li a {
     font-size: 75%;
 }
 
+/* Mini chiffres inter */
+.pub1 {
+    color: #D4AF37;
+    font-family: 'Raleway', 'Prompt';
+    text-align: center
+}
+#fish, #clock, #star{
+    color: #fff;
+    font-size: 2rem;
+}
+#fish {
+    margin-right: 50%;
+}
+#star {
+    margin-left: 50%;
+}
 /* div cheffe */
 .cheffe {
     background-image: url("../IMG/utilitaire/beigetemp.jpg");
