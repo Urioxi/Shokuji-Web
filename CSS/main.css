@@ -14,6 +14,7 @@ body {
     font-family: 'Prompt', Arial, sans-serif;
     justify-self: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 
@@ -22,13 +23,13 @@ body {
     height: 25vh;
     position: relative;
     padding: 0;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
 nav {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 20px 8%;
@@ -50,11 +51,72 @@ nav li a {
     text-decoration: none;
     color: #fff;
 }
-.titre {
-    font-family: 'Noto Sans JP';
-    font-weight: bold;
-}
 .video {
     position: absolute;
     z-index: -1;
+}
+.menuv {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: absolute;
+    margin-top: -20%;
+}
+
+.titre {
+    font-family: 'Noto Sans JP';
+    font-weight: bold;
+    margin-top: -10%;
+    transform: scale(1.2);
+}
+/* Bouton menu */
+.viewmenu {
+    margin-bottom: 2%;
+    margin-top: 10%
+}
+.menub {
+    font-size: 2rem;
+    border-radius: 25px;
+    border-color: #333;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    width: 15%;
+    transition: 1s;
+    cursor: pointer;
+}
+.menub:hover {
+    transform: scale(1.2);
+}
+.menua {
+    text-decoration: none;
+    font-family: 'Noto Sans JP', Arial;
+    color: #333;
+    font-size: 75%;
+}
+
+/* div cheffe */
+.cheffe {
+    background-image: url("../IMG/utilitaire/beigetemp.jpg");
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.imgcheffe {
+    margin-left: 7%;
+    clip-path: circle(35%);
+    width: 25%;
+    height: auto;
+}
+.cheffetxt {
+    padding: 5px;
+    font-size: 2em;
+    color: #333;
+    align-items: center;
+    width: 100%;
+
+    margin-left: 7%;
 }
