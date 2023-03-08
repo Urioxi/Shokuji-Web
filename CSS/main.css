@@ -103,17 +103,16 @@ nav li a {
 .pub1 {
     color: #D4AF37;
     font-family: 'Raleway', 'Prompt';
-    text-align: center
+    text-align: center;
+
 }
 #fish, #clock, #star{
     color: #fff;
     font-size: 2rem;
 }
-#fish {
-    margin-right: 50%;
-}
-#star {
-    margin-left: 50%;
+
+.fish, .clock, .star {
+    width: 10%;
 }
 /* div cheffe */
 .cheffe {
